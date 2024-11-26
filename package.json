@@ -1,0 +1,27 @@
+{
+  "name": "nexo-ui-automation-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "generate-report": "node utils/report-generator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "eslint": "^9.15.0"
+  },
+  "dependencies": {
+    "chromedriver": "^131.0.0",
+    "geckodriver": "^5.0.0",
+    "selenium-webdriver": "^4.26.0"
+  },
+  "overrides": {
+    "@cucumber/cucumber": {
+      "reflect-metadata": "0.2.2"
+    }
+  }
+}
